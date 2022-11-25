@@ -1,0 +1,9 @@
+node_modules
+JSON
+Temp
+*.flac
+*.mp3
+*.jpg
+.DS_Store
+logger.ts
+test.ts
