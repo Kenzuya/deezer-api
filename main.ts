@@ -209,7 +209,7 @@ class Deezer {
 
 		return this.xor(salt, firstMd5Half, secondMd5Half);
 	}
-	public decrypt(songId: string, arrayBuffer = this.arrayBuffer) {
+	public decrypt(songId = this.songId, arrayBuffer = this.arrayBuffer) {
 		if (!(this.arrayBuffer || arrayBuffer)) {
 			throw new Error("ArrayBuffer is undefined");
 		}
