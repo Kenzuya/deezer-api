@@ -211,7 +211,7 @@ class Deezer {
 	}
 	public decrypt(songId = this.songId, arrayBuffer = this.arrayBuffer) {
 		if (!(this.arrayBuffer || arrayBuffer)) {
-			throw new Error("ArrayBuffer is undefined");
+			throw new Error("Error decrypting song while ArrayBuffer is undefined");
 		}
 		const source = new Uint8Array(arrayBuffer);
 		const dest = new Uint8Array(source.length);
